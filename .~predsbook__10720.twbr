@@ -1,0 +1,1135 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0614.2338                               -->
+<workbook source-build='2020.2.2 (20202.20.0614.2338)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='bcandpreds' inline='true' name='federated.0x9luse06f1g8o1gjpa8y1n46963' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='bcandpreds' name='textscan.0p6unav0rs1wtn1dvc3pl1yfk47u'>
+            <connection class='textscan' directory='/Users/Lupine/Documents/Metis/Cancer-Classification' filename='bcandpreds.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0p6unav0rs1wtn1dvc3pl1yfk47u' name='bcandpreds.csv' table='[bcandpreds#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='C1' ordinal='1' />
+            <column datatype='integer' name='DX_Death' ordinal='2' />
+            <column datatype='integer' name='N_Tumors' ordinal='3' />
+            <column datatype='integer' name='MO_Survival' ordinal='4' />
+            <column datatype='integer' name='DX_Year' ordinal='5' />
+            <column datatype='integer' name='AGE_Code' ordinal='6' />
+            <column datatype='integer' name='Female' ordinal='7' />
+            <column datatype='integer' name='ID_Patient' ordinal='8' />
+            <column datatype='string' name='Race' ordinal='9' />
+            <column datatype='string' name='Grade' ordinal='10' />
+            <column datatype='integer' name='Histology' ordinal='11' />
+            <column datatype='string' name='Surgery' ordinal='12' />
+            <column datatype='string' name='Nodes_Pos' ordinal='13' />
+            <column datatype='string' name='Stage' ordinal='14' />
+            <column datatype='string' name='T' ordinal='15' />
+            <column datatype='string' name='N' ordinal='16' />
+            <column datatype='integer' name='S1' ordinal='17' />
+            <column datatype='integer' name='S2A' ordinal='18' />
+            <column datatype='integer' name='S2B' ordinal='19' />
+            <column datatype='integer' name='S3A' ordinal='20' />
+            <column datatype='integer' name='S3B' ordinal='21' />
+            <column datatype='integer' name='S3C' ordinal='22' />
+            <column datatype='integer' name='S3N' ordinal='23' />
+            <column datatype='integer' name='S0' ordinal='24' />
+            <column datatype='integer' name='N1' ordinal='25' />
+            <column datatype='integer' name='N2' ordinal='26' />
+            <column datatype='integer' name='N3' ordinal='27' />
+            <column datatype='integer' name='NX' ordinal='28' />
+            <column datatype='integer' name='M_M1' ordinal='29' />
+            <column datatype='integer' name='M_MX' ordinal='30' />
+            <column datatype='integer' name='predict' ordinal='31' />
+            <column datatype='real' name='p0' ordinal='32' />
+            <column datatype='real' name='p1' ordinal='33' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0p6unav0rs1wtn1dvc3pl1yfk47u' name='bcandpreds.csv' table='[bcandpreds#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='C1' ordinal='1' />
+            <column datatype='integer' name='DX_Death' ordinal='2' />
+            <column datatype='integer' name='N_Tumors' ordinal='3' />
+            <column datatype='integer' name='MO_Survival' ordinal='4' />
+            <column datatype='integer' name='DX_Year' ordinal='5' />
+            <column datatype='integer' name='AGE_Code' ordinal='6' />
+            <column datatype='integer' name='Female' ordinal='7' />
+            <column datatype='integer' name='ID_Patient' ordinal='8' />
+            <column datatype='string' name='Race' ordinal='9' />
+            <column datatype='string' name='Grade' ordinal='10' />
+            <column datatype='integer' name='Histology' ordinal='11' />
+            <column datatype='string' name='Surgery' ordinal='12' />
+            <column datatype='string' name='Nodes_Pos' ordinal='13' />
+            <column datatype='string' name='Stage' ordinal='14' />
+            <column datatype='string' name='T' ordinal='15' />
+            <column datatype='string' name='N' ordinal='16' />
+            <column datatype='integer' name='S1' ordinal='17' />
+            <column datatype='integer' name='S2A' ordinal='18' />
+            <column datatype='integer' name='S2B' ordinal='19' />
+            <column datatype='integer' name='S3A' ordinal='20' />
+            <column datatype='integer' name='S3B' ordinal='21' />
+            <column datatype='integer' name='S3C' ordinal='22' />
+            <column datatype='integer' name='S3N' ordinal='23' />
+            <column datatype='integer' name='S0' ordinal='24' />
+            <column datatype='integer' name='N1' ordinal='25' />
+            <column datatype='integer' name='N2' ordinal='26' />
+            <column datatype='integer' name='N3' ordinal='27' />
+            <column datatype='integer' name='NX' ordinal='28' />
+            <column datatype='integer' name='M_M1' ordinal='29' />
+            <column datatype='integer' name='M_MX' ordinal='30' />
+            <column datatype='integer' name='predict' ordinal='31' />
+            <column datatype='real' name='p0' ordinal='32' />
+            <column datatype='real' name='p1' ordinal='33' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>C1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[C1]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>C1</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DX_Death</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DX_Death]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>DX_Death</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N_Tumors</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[N_Tumors]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>N_Tumors</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MO_Survival</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MO_Survival]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>MO_Survival</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DX_Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DX_Year]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>DX_Year</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AGE_Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AGE_Code]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>AGE_Code</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Female</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Female]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>Female</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID_Patient</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID_Patient]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>ID_Patient</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Race]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>Race</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Grade</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Grade]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>Grade</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Histology</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Histology]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>Histology</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Surgery</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Surgery]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>Surgery</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nodes_Pos</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nodes_Pos]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>Nodes_Pos</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Stage]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>Stage</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>T</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[T]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>T</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>N</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[S1]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>S1</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S2A</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[S2A]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>S2A</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S2B</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[S2B]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>S2B</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S3A</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[S3A]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>S3A</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S3B</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[S3B]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>S3B</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S3C</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[S3C]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>S3C</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S3N</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[S3N]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>S3N</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S0</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[S0]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>S0</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[N1]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>N1</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[N2]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>N2</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[N3]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>N3</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NX</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NX]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>NX</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>M_M1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[M_M1]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>M_M1</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>M_MX</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[M_MX]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>M_MX</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>predict</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[predict]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>predict</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>p0</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[p0]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>p0</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>p1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[p1]</local-name>
+            <parent-name>[bcandpreds.csv]</parent-name>
+            <remote-alias>p1</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Age (In 5 year Groups)' datatype='integer' name='[AGE_Code]' role='dimension' type='ordinal' />
+      <column caption='DX Death' datatype='integer' name='[DX_Death]' role='measure' type='quantitative' />
+      <column caption='DX Year' datatype='integer' name='[DX_Year]' role='dimension' type='quantitative' />
+      <column caption='ID Patient' datatype='integer' name='[ID_Patient]' role='dimension' type='ordinal' />
+      <column caption='Months Survival' datatype='integer' name='[MO_Survival]' role='measure' type='quantitative' />
+      <column caption='M M1' datatype='integer' name='[M_M1]' role='measure' type='quantitative' />
+      <column caption='M Mx' datatype='integer' name='[M_MX]' role='measure' type='quantitative' />
+      <column caption='N Tumors' datatype='integer' name='[N_Tumors]' role='measure' type='quantitative' />
+      <column caption='Nodes Pos' datatype='string' name='[Nodes_Pos]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='P1 (copy)' datatype='real' name='[P1 (copy)_130111819180949504]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[p1]' />
+      </column>
+      <column caption='Count Predict 1' datatype='integer' name='[Predict (copy)_130111819182858241]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='COUNT(if ([predict] = 1) then 1 END)' />
+      </column>
+      <column caption='Stage (copy)' datatype='string' name='[Stage (copy)_130111819195301891]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Stage]' />
+      </column>
+      <column datatype='string' name='[Stage]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='bcandpreds.csv' datatype='table' name='[__tableau_internal_object_id__].[bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F]' role='measure' type='quantitative' />
+      <column caption='P0' datatype='real' name='[p0]' role='measure' type='quantitative' />
+      <column caption='P1' datatype='real' name='[p1]' role='measure' type='quantitative' />
+      <column caption='Predict' datatype='integer' name='[predict]' role='measure' type='quantitative' />
+      <column-instance column='[MO_Survival]' derivation='None' name='[none:MO_Survival:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Stage]' derivation='None' name='[none:Stage:nk]' pivot='key' type='nominal' />
+      <group hidden='true' name='[Exclusions (MO Survival,Stage)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:MO_Survival:qk]' />
+          <groupfilter function='level-members' level='[none:Stage:nk]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='bcandpreds.csv' id='bcandpreds.csv_8A9ED5D2F8394994A622BAD41AE1B75F'>
+            <properties context=''>
+              <relation connection='textscan.0p6unav0rs1wtn1dvc3pl1yfk47u' name='bcandpreds.csv' table='[bcandpreds#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='C1' ordinal='1' />
+                  <column datatype='integer' name='DX_Death' ordinal='2' />
+                  <column datatype='integer' name='N_Tumors' ordinal='3' />
+                  <column datatype='integer' name='MO_Survival' ordinal='4' />
+                  <column datatype='integer' name='DX_Year' ordinal='5' />
+                  <column datatype='integer' name='AGE_Code' ordinal='6' />
+                  <column datatype='integer' name='Female' ordinal='7' />
+                  <column datatype='integer' name='ID_Patient' ordinal='8' />
+                  <column datatype='string' name='Race' ordinal='9' />
+                  <column datatype='string' name='Grade' ordinal='10' />
+                  <column datatype='integer' name='Histology' ordinal='11' />
+                  <column datatype='string' name='Surgery' ordinal='12' />
+                  <column datatype='string' name='Nodes_Pos' ordinal='13' />
+                  <column datatype='string' name='Stage' ordinal='14' />
+                  <column datatype='string' name='T' ordinal='15' />
+                  <column datatype='string' name='N' ordinal='16' />
+                  <column datatype='integer' name='S1' ordinal='17' />
+                  <column datatype='integer' name='S2A' ordinal='18' />
+                  <column datatype='integer' name='S2B' ordinal='19' />
+                  <column datatype='integer' name='S3A' ordinal='20' />
+                  <column datatype='integer' name='S3B' ordinal='21' />
+                  <column datatype='integer' name='S3C' ordinal='22' />
+                  <column datatype='integer' name='S3N' ordinal='23' />
+                  <column datatype='integer' name='S0' ordinal='24' />
+                  <column datatype='integer' name='N1' ordinal='25' />
+                  <column datatype='integer' name='N2' ordinal='26' />
+                  <column datatype='integer' name='N3' ordinal='27' />
+                  <column datatype='integer' name='NX' ordinal='28' />
+                  <column datatype='integer' name='M_M1' ordinal='29' />
+                  <column datatype='integer' name='M_MX' ordinal='30' />
+                  <column datatype='integer' name='predict' ordinal='31' />
+                  <column datatype='real' name='p0' ordinal='32' />
+                  <column datatype='real' name='p1' ordinal='33' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Count / Stages'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Distribution of observations across stages</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bcandpreds' name='federated.0x9luse06f1g8o1gjpa8y1n46963' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0x9luse06f1g8o1gjpa8y1n46963'>
+            <column datatype='string' name='[Stage]' role='dimension' type='nominal' />
+            <column-instance column='[p1]' derivation='Avg' name='[avg:p1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[predict]' derivation='Count' name='[cnt:predict:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Stage]' derivation='None' name='[none:Stage:nk]' pivot='key' type='nominal' />
+            <column caption='P1' datatype='real' name='[p1]' role='measure' type='quantitative' />
+            <column caption='Predict' datatype='integer' name='[predict]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0x9luse06f1g8o1gjpa8y1n46963].[none:Stage:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Stage:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Stage:nk]' member='%null%' />
+                <groupfilter function='member' level='[none:Stage:nk]' member='&quot;UNK&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0x9luse06f1g8o1gjpa8y1n46963].[none:Stage:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0x9luse06f1g8o1gjpa8y1n46963].[avg:p1:qk]' scope='rows' value='true' />
+            <format attr='title' class='0' field='[federated.0x9luse06f1g8o1gjpa8y1n46963].[avg:p1:qk]' scope='rows' value='Predicted Morbidity Probability' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-size' field='[federated.0x9luse06f1g8o1gjpa8y1n46963].[avg:p1:qk]' value='10' />
+            <format attr='font-weight' field='[federated.0x9luse06f1g8o1gjpa8y1n46963].[avg:p1:qk]' value='bold' />
+            <format attr='text-orientation' value='0' />
+            <format attr='text-orientation' data-class='total' value='0' />
+            <format attr='vertical-align' data-class='total' value='center' />
+            <format attr='text-align' data-class='total' value='center' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='field-labels-spanner'>
+            <format attr='font-weight' scope='cols' value='bold' />
+            <format attr='font-size' scope='cols' value='14' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0x9luse06f1g8o1gjpa8y1n46963].[none:Stage:nk]' value='true' />
+            <format attr='font-size' field='[federated.0x9luse06f1g8o1gjpa8y1n46963].[none:Stage:nk]' value='12' />
+            <format attr='font-size' field='[federated.0x9luse06f1g8o1gjpa8y1n46963].[avg:p1:qk]' value='10' />
+            <format attr='font-weight' field='[federated.0x9luse06f1g8o1gjpa8y1n46963].[avg:p1:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0x9luse06f1g8o1gjpa8y1n46963].[cnt:predict:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#eee4e3</color>
+                <color>#ecd8d5</color>
+                <color>#e9cdc8</color>
+                <color>#e7c1bb</color>
+                <color>#e5b6ae</color>
+                <color>#e2aaa2</color>
+                <color>#e09f95</color>
+                <color>#dd9589</color>
+                <color>#db8a7d</color>
+                <color>#d98072</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0x9luse06f1g8o1gjpa8y1n46963].[cnt:predict:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0x9luse06f1g8o1gjpa8y1n46963].[avg:p1:qk]</rows>
+        <cols>[federated.0x9luse06f1g8o1gjpa8y1n46963].[none:Stage:nk]</cols>
+      </table>
+      <simple-id uuid='{1FAE5E6B-0E77-4D63-B3FD-BE8816F4D265}' />
+    </worksheet>
+    <worksheet name='N Tumors'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bcandpreds' name='federated.0x9luse06f1g8o1gjpa8y1n46963' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0x9luse06f1g8o1gjpa8y1n46963'>
+            <column caption='N Tumors' datatype='integer' name='[N_Tumors]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Stage]' role='dimension' type='nominal' />
+            <column-instance column='[p1]' derivation='Avg' name='[avg:p1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[N_Tumors]' derivation='Count' name='[cnt:N_Tumors:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Stage]' derivation='None' name='[none:Stage:nk]' pivot='key' type='nominal' />
+            <column caption='P1' datatype='real' name='[p1]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0x9luse06f1g8o1gjpa8y1n46963].[none:Stage:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0x9luse06f1g8o1gjpa8y1n46963].[avg:p1:qk]</rows>
+        <cols>[federated.0x9luse06f1g8o1gjpa8y1n46963].[cnt:N_Tumors:qk]</cols>
+      </table>
+      <simple-id uuid='{CF009560-8BAE-4BAF-872D-2B5928BA86B3}' />
+    </worksheet>
+    <worksheet name='Probs / Ages'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average probabilities are lower in mid life year, although case counts are higher</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bcandpreds' name='federated.0x9luse06f1g8o1gjpa8y1n46963' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0x9luse06f1g8o1gjpa8y1n46963'>
+            <column caption='Age (In 5 year Groups)' datatype='integer' name='[AGE_Code]' role='dimension' type='ordinal' />
+            <column caption='Count Predict 1' datatype='integer' name='[Predict (copy)_130111819182858241]' role='measure' type='ordinal'>
+              <calculation class='tableau' formula='COUNT(if ([predict] = 1) then 1 END)' />
+            </column>
+            <column-instance column='[p1]' derivation='Avg' name='[avg:p1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[AGE_Code]' derivation='None' name='[none:AGE_Code:ok]' pivot='key' type='ordinal' />
+            <column caption='P1' datatype='real' name='[p1]' role='measure' type='quantitative' />
+            <column caption='Predict' datatype='integer' name='[predict]' role='measure' type='quantitative' />
+            <column-instance column='[Predict (copy)_130111819182858241]' derivation='User' name='[usr:Predict (copy)_130111819182858241:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0x9luse06f1g8o1gjpa8y1n46963].[usr:Predict (copy)_130111819182858241:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0x9luse06f1g8o1gjpa8y1n46963].[avg:p1:qk]</rows>
+        <cols>[federated.0x9luse06f1g8o1gjpa8y1n46963].[none:AGE_Code:ok]</cols>
+      </table>
+      <simple-id uuid='{04BF679C-61C0-4712-B79A-528494B3AE5D}' />
+    </worksheet>
+    <worksheet name='Probs / Months'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average probabilities decrease after 2 years since initial diagnosis</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bcandpreds' name='federated.0x9luse06f1g8o1gjpa8y1n46963' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0x9luse06f1g8o1gjpa8y1n46963'>
+            <column caption='Months Survival' datatype='integer' name='[MO_Survival]' role='measure' type='quantitative' />
+            <column-instance column='[p1]' derivation='Avg' name='[avg:p1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MO_Survival]' derivation='None' name='[none:MO_Survival:qk]' pivot='key' type='quantitative' />
+            <column caption='P1' datatype='real' name='[p1]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refband'>
+            <format attr='fill-color' id='refline0' value='#f9e9e0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <reference-line axis-column='[federated.0x9luse06f1g8o1gjpa8y1n46963].[none:MO_Survival:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label-type='none' paired-id='refline1' scope='per-table' symmetric='false' value='0' value-column='[federated.0x9luse06f1g8o1gjpa8y1n46963].[none:MO_Survival:qk]' z-order='1' />
+            <reference-line axis-column='[federated.0x9luse06f1g8o1gjpa8y1n46963].[none:MO_Survival:qk]' enable-instant-analytics='true' formula='constant' id='refline1' label-type='automatic' paired-id='refline0' scope='per-table' symmetric='false' value='48' value-column='[federated.0x9luse06f1g8o1gjpa8y1n46963].[none:MO_Survival:qk]' z-order='1' />
+            <reference-line axis-column='[federated.0x9luse06f1g8o1gjpa8y1n46963].[none:MO_Survival:qk]' enable-instant-analytics='true' formula='min' id='refline2' label-type='automatic' paired-id='refline0' scope='per-pane' symmetric='false' value-column='[federated.0x9luse06f1g8o1gjpa8y1n46963].[none:MO_Survival:qk]' z-order='2' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#4e79a7' />
+                <format attr='mark-transparency' value='147' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0x9luse06f1g8o1gjpa8y1n46963].[avg:p1:qk]</rows>
+        <cols>[federated.0x9luse06f1g8o1gjpa8y1n46963].[none:MO_Survival:qk]</cols>
+      </table>
+      <simple-id uuid='{DF952CC3-9A78-40C4-9BBE-0D8F3DB678E8}' />
+    </worksheet>
+    <worksheet name='Probs / Stages'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Progressive Stages are More Frequently Classified Morbid</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bcandpreds' name='federated.0x9luse06f1g8o1gjpa8y1n46963' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0x9luse06f1g8o1gjpa8y1n46963'>
+            <column caption='Count Predict 1' datatype='integer' name='[Predict (copy)_130111819182858241]' role='measure' type='ordinal'>
+              <calculation class='tableau' formula='COUNT(if ([predict] = 1) then 1 END)' />
+            </column>
+            <column datatype='string' name='[Stage]' role='dimension' type='nominal' />
+            <column-instance column='[p1]' derivation='Avg' name='[avg:p1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Stage]' derivation='None' name='[none:Stage:nk]' pivot='key' type='nominal' />
+            <column caption='P1' datatype='real' name='[p1]' role='measure' type='quantitative' />
+            <column caption='Predict' datatype='integer' name='[predict]' role='measure' type='quantitative' />
+            <column-instance column='[Predict (copy)_130111819182858241]' derivation='User' name='[usr:Predict (copy)_130111819182858241:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0x9luse06f1g8o1gjpa8y1n46963].[none:Stage:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Stage:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Stage:nk]' member='%null%' />
+                <groupfilter function='member' level='[none:Stage:nk]' member='&quot;UNK&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0x9luse06f1g8o1gjpa8y1n46963].[none:Stage:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0x9luse06f1g8o1gjpa8y1n46963].[avg:p1:qk]' scope='rows' value='true' />
+            <format attr='title' class='0' field='[federated.0x9luse06f1g8o1gjpa8y1n46963].[avg:p1:qk]' scope='rows' value='Predicted Morbidity Probability' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-size' field='[federated.0x9luse06f1g8o1gjpa8y1n46963].[avg:p1:qk]' value='10' />
+            <format attr='font-weight' field='[federated.0x9luse06f1g8o1gjpa8y1n46963].[avg:p1:qk]' value='bold' />
+            <format attr='text-orientation' value='0' />
+            <format attr='text-orientation' data-class='total' value='0' />
+            <format attr='vertical-align' data-class='total' value='center' />
+            <format attr='text-align' data-class='total' value='center' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='field-labels-spanner'>
+            <format attr='font-weight' scope='cols' value='bold' />
+            <format attr='font-size' scope='cols' value='14' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0x9luse06f1g8o1gjpa8y1n46963].[none:Stage:nk]' value='true' />
+            <format attr='font-size' field='[federated.0x9luse06f1g8o1gjpa8y1n46963].[none:Stage:nk]' value='12' />
+            <format attr='font-size' field='[federated.0x9luse06f1g8o1gjpa8y1n46963].[avg:p1:qk]' value='10' />
+            <format attr='font-weight' field='[federated.0x9luse06f1g8o1gjpa8y1n46963].[avg:p1:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0x9luse06f1g8o1gjpa8y1n46963].[usr:Predict (copy)_130111819182858241:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#eee4e2</color>
+                <color>#ecd8d4</color>
+                <color>#e9ccc5</color>
+                <color>#e7c0b8</color>
+                <color>#e5b4aa</color>
+                <color>#e2a99d</color>
+                <color>#e09e8f</color>
+                <color>#dd9383</color>
+                <color>#db8876</color>
+                <color>#d97e6a</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0x9luse06f1g8o1gjpa8y1n46963].[usr:Predict (copy)_130111819182858241:qk]' value='Predicts Morbid Count' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0x9luse06f1g8o1gjpa8y1n46963].[usr:Predict (copy)_130111819182858241:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0x9luse06f1g8o1gjpa8y1n46963].[avg:p1:qk]</rows>
+        <cols>[federated.0x9luse06f1g8o1gjpa8y1n46963].[none:Stage:nk]</cols>
+      </table>
+      <simple-id uuid='{C58BE4C9-55BC-4CA2-B124-BC495D417A37}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Probs / Stages'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='151'>
+            <card pane-specification-id='0' param='[federated.0x9luse06f1g8o1gjpa8y1n46963].[usr:Predict (copy)_130111819182858241:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4A774C4F-46F1-4D05-B965-CA9C8B4F5F9B}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Count / Stages'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0x9luse06f1g8o1gjpa8y1n46963].[cnt:predict:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7131745E-340C-4901-B3C0-AF8EBB1E6A05}' />
+    </window>
+    <window class='worksheet' name='Probs / Months'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{02A3CF71-7CE3-4731-960B-C31B62C7DABB}' />
+    </window>
+    <window class='worksheet' name='N Tumors'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0x9luse06f1g8o1gjpa8y1n46963].[none:Stage:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{344A9E6C-EBE5-4BC0-939E-67A5DDF5C8CE}' />
+    </window>
+    <window class='worksheet' name='Probs / Ages'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0x9luse06f1g8o1gjpa8y1n46963].[usr:Predict (copy)_130111819182858241:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{76228CBE-6BEE-48D3-AFD8-9FF8DF46CA53}' />
+    </window>
+  </windows>
+</workbook>
